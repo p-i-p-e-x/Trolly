@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troll Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-800 text-white">
+    <header class="bg-green-600 text-center py-4">
+        <h1 class="text-4xl font-bold">Welcome to the Ultimate Troll Site!</h1>
+    </header>
+    <main class="p-8">
+        <section class="mb-8">
+            <h2 class="text-3xl font-semibold mb-4">Breaking News!</h2>
+            <p class="text-lg">Aliens have landed on Earth and are demanding to see our memes.</p>
+            <img src="https://source.unsplash.com/random/800x600?funny" alt="Random funny image" class="mt-4 mx-auto rounded shadow-lg">
+        </section>
+        <section class="mb-8">
+            <h2 class="text-3xl font-semibold mb-4">Exclusive Offer!</h2>
+            <p class="text-lg">Click the button below to receive a million dollars (not really).</p>
+            <button id="trollButton" class="bg-red-500 text-white px-4 py-2 mt-4 rounded hover:bg-red-700 transition duration-300">Get Rich Now!</button>
+        </section>
+    </main>
+    <footer class="bg-green-600 text-center py-4">
+        <p>&copy; 2024 Troll Inc. All rights reserved. Just kidding!</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+document.getElementById('trollButton').addEventListener('click', function() {
+    alert('Congratulations! You\'ve been trolled!');
+});
